@@ -30,3 +30,10 @@ def temperature_converter():
     
     if unit == "celsius":
         converted_temperature = round((temperature * 9/5) + 32, 2)
+        print(f"{temperature} degrees Celsius is equal to {converted_temperature} degrees Fahrenheit")
+    elif unit == "fahrenheit":
+        converted_temperature = round((temperature - 32) * 5/9, 2)
+        print(f"{temperature} degrees Fahrenheit is equal to {converted_temperature} degrees Celsius")
+    else:
+        print("Invalid unit. Please enter either celsius or fahrenheit")
+        return
