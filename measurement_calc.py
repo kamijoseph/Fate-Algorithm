@@ -20,6 +20,7 @@ def distance_converter():
         print("Invalid unit. Please enter either miles or kilometers")
         return
 
+# Temperature Converter
 def temperature_converter():
     unit = input("Is the temperature in Celsius or Fahrenheit? ").strip().lower()
     try:
@@ -37,6 +38,23 @@ def temperature_converter():
     else:
         print("Invalid unit. Please enter either celsius or fahrenheit")
         return
-    
+
+# Weight Converter   
 def weight_converter():
-    pass
+    unit = input("Is the weight in Pounds or Kilograms? ").strip().lower()
+    try:
+        weight = float(input("Enter the weight (e.g 500.0/ 60.3): "))
+    except ValueError:
+        print("Invalid Number.Please enter a valid numerical value")
+        return
+    
+    if unit == "pounds":
+        converted_weight =  round(weight / 2.20462, 2)
+        print(f"{weight} pounds is equal to {converted_weight} kilograms")
+    elif unit == "kilograms":
+        converted_weight = round(weight * 2.20462, 2)
+        print(f"{weight} kilograms is equal to {converted_weight} pounds")
+    else:
+        print("Invalid unit. please enter either pounds or kilograms")
+        return
+    
