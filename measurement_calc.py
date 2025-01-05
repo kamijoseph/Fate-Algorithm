@@ -94,3 +94,32 @@ def time_converter():
         print(f"{time} minutes is equal to {converted_time} hours")
     else:
         print("Invalid unit. Please enter either hours or minutes")
+        return
+    
+# Main function to run the measurement calculator
+def main():
+    print("Welcome to the Units Of Measurement Conversion Calculator\n")
+    
+    while True:
+        print("Select the type of conversion you want to perform\n")
+        print("1. Distance Converter\n2. Temperature Converter\n3. Weight Converter\n4. Volume Converter\n5. Time Converter\n Type Q to quit")
+        measurement_type = input("Enter the number of conversion you want to perform (e.g 1/ 2/ 3): ").strip()
+        
+        if measurement_type == "1":
+            distance_converter()
+        elif measurement_type == "2":
+            temperature_converter()
+        elif measurement_type == "3":
+            weight_converter()
+        elif measurement_type == "4":
+            volume_converter()
+        elif measurement_type == "5":
+            time_converter()
+        elif measurement_type.upper() == "Q":
+            print("Thank you for using the Units Of Measurement Conversion Calculator")
+            break
+        else:
+            print("Invalid Option. Please enter a valid input (e.g 1/ 2/ 3/ 4/ 5 and Q to quit)")
+            
+if __name__ == "__main__":
+    main()
