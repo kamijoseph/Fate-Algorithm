@@ -102,8 +102,8 @@ def main():
     
     while True:
         print("Select the type of conversion you want to perform\n")
-        print("1. Distance Converter\n2. Temperature Converter\n3. Weight Converter\n4. Volume Converter\n5. Time Converter\n Type Q to quit")
-        measurement_type = input("Enter the number of conversion you want to perform (e.g 1/ 2/ 3): ").strip()
+        print("1. Distance Converter\n2. Temperature Converter\n3. Weight Converter\n4. Volume Converter\n5. Time Converter\nType Q to quit.\n")
+        measurement_type = input("Enter the number of conversion you want to perform (e.g 1/ 2/ 3/ 4 or Q to quit): ").strip()
         
         if measurement_type == "1":
             distance_converter()
@@ -119,7 +119,7 @@ def main():
             print("Thank you for using the Units Of Measurement Conversion Calculator")
             break
         else:
-            print("Invalid Option. Please enter a valid input (e.g 1/ 2/ 3/ 4/ 5 and Q to quit)")
+            print("Invalid Option. Please enter a valid input (e.g 1/ 2/ 3/ 4/ 5 or Q to quit)")
             
 if __name__ == "__main__":
     main()
