@@ -76,3 +76,21 @@ def volume_converter():
     else:
         print("Invalid unit. Please enter either litres or gallons")
         return
+
+# Time Converter
+def time_converter():
+    unit = input("Is the time in hours or minutes? ").strip().lower()
+    try:
+        time = float(input("Enter the time (e.g 5.0/ 60.3): "))
+    except ValueError:
+        print("Invalid Number. Please enter a valid numerical value")
+        return
+    
+    if unit == "hours":
+        converted_time = round(time * 60, 2)
+        print(f"{time} hours is equal to {converted_time} minutes")
+    elif unit == "minutes":
+        converted_time = round(time / 60, 2)
+        print(f"{time} minutes is equal to {converted_time} hours")
+    else:
+        print("Invalid unit. Please enter either hours or minutes")
