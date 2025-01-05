@@ -37,3 +37,6 @@ def temperature_converter():
     else:
         print("Invalid unit. Please enter either celsius or fahrenheit")
         return
+    
+def weight_converter():
+    pass
