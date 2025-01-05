@@ -57,4 +57,22 @@ def weight_converter():
     else:
         print("Invalid unit. please enter either pounds or kilograms")
         return
+
+# Volume Converter
+def volume_converter():
+    unit = input("Is the volume in litres or gallons?:").strip().lower()
+    try:
+        volume = float(input("Enter the volume (e.g 499.0/ 6000.7): "))
+    except ValueError:
+        print("Invalid Number. Please enter a valid numerical value")
+        return
     
+    if unit == "litres":
+        converted_volume = round(volume * 0.264172, 2)
+        print(f"{volume} litres is equal to {converted_volume} gallons")
+    elif unit == "gallons":
+        converted_volume = round(volume / 0.264172, 2)
+        print(f"{volume} gallons is equal to {converted_volume} litres")
+    else:
+        print("Invalid unit. Please enter either litres or gallons")
+        return
