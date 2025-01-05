@@ -19,3 +19,14 @@ def distance_converter():
     else:
         print("Invalid unit. Please enter either miles or kilometers")
         return
+
+def temperature_converter():
+    unit = input("Is the temperature in Celsius or Fahrenheit? ").strip().lower()
+    try:
+        temperature = float(input("Enter the temperature (e.g 5.0/ 60.3): "))
+    except ValueError:
+        print("Invalid Number.Please enter a valid numerical value")
+        return
+    
+    if unit == "celsius":
+        converted_temperature = round((temperature * 9/5) + 32, 2)
