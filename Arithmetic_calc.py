@@ -35,3 +35,16 @@ def calculate():
         print("Invalid Input! Enter a vali numerical number.")
         return
     
+def main():
+    print("Welcome to the Arithmetic Calculator")
+    while True:
+        # Choice to calculate or exit
+        calculate_choice = input("Do you want to calculate? (yes/no): ").strip().lower()
+        if calculate_choice == "yes":
+            calculate()
+        elif calculate_choice == "no":
+            print("Thank you for using the Arithmetic Calculator")
+            break
+        else:
+            print("Invalid Input! Enter yes or no")
+            continue
