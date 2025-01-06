@@ -30,9 +30,7 @@ def calculate():
             else:
                 print("Invalid operators! Supported operators are +, -, *, /, %, ^, sqrt")
                 return
-            
-            
-        
+            print(f"{num1} {operator} {num2} = {result}")   
     except ValueError:
         print("Invalid Input! Enter a vali numerical number.")
         return
