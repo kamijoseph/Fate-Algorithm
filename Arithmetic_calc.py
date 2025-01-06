@@ -4,7 +4,7 @@ import math
 
 def calculate():
     try:
-        num1 = float(input("Enter the first number"))
+        num1 = float(input("Enter the first number: "))
         operator = input("Enter the operator (+, -, *, /, %, ^, sqrt): ").strip()
         if operator.lower() == "sqrt":
             result = math.sqrt(num1)
@@ -48,3 +48,8 @@ def main():
         else:
             print("Invalid Input! Enter yes or no")
             continue
+        
+if __name__ == "__main__":
+    main()
+    
+# Calculator Finished
