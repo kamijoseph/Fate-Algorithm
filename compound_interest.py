@@ -27,3 +27,9 @@ def calculate_compound_interest():
 
 def main():
     print("\nWelcome. This is a simple compound interest calculator.")
+    compound_choice = input("Would you like to calculate compound interest? (yes/no): ")
+    if compound_choice.lower() == "yes":
+        calculate_compound_interest()
+    else:
+        print("Goodbye!")
+        
