@@ -15,7 +15,7 @@ def main():
         try:
             n = int(input("Enter the number of fibonacci numbers you want to generate: "))
             if n < 1:
-                print("Please enter a number greater tan zero.")
+                print("Please enter a number greater than zero.")
                 continue
             else:
                 result = fib_generator(n)
@@ -23,3 +23,6 @@ def main():
                 break
         except ValueError:
             print("Invalid input! Pleae enter a valid number.")
+
+if __name__ == "__main__":
+    main()
