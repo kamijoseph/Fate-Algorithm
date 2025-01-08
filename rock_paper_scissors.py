@@ -41,7 +41,15 @@ def rps_game():
 
 # Man Function
 def main():
-    pass
+    print("Welcome, this is the Rock, Paper, Scissors Game")
+    while True:
+        play_choice = input("Do you want to play? (yes/no): ").lower()
+        if play_choice != "yes":
+            break
+        rps_game()
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again != "yes":
+            break
 
 if __name__ == "__main__":
     main()
