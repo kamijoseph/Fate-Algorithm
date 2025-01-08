@@ -20,4 +20,18 @@ def get_stock_price(stock_symbol, start_date, end_date):
         return None
     
 def main():
-    pass
+    print("Welcome this is the Yahoo Finance Stock Price Checker!")
+    stock_symbol = input("Enter the stock ticker symbol (e.g., AAPL for Apple): ").upper()
+    start_date = input("Enter the start date (YYYY-MM-DD): ")
+    end_date = input("Enter the end date (YYYY-MM-DD): ")
+    
+    stock_data = get_stock_price(stock_symbol, start_date, end_date)
+    if stock_data is not None:
+        save_option = input("Would you like to save the data to a CSV file? (yes/no): ").lower()
+        if save_option == "yes":
+            filename = f"{stock_symbol}_prices_{start_date}_to_{end_date}.csv"
+            stock_data.to_csv(filename)
+            print(f"Data saved to {filename}")
+            
+if __name__ == "__main__":
+    main()
