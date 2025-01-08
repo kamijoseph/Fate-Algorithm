@@ -15,6 +15,20 @@ def rps_game():
         while player not in choices:
             player = input("Rock, Paper, or Scissors?: ").lower()
         print(f"Player: {player}\nComputer: {computer}")
+        
+        # Outcome
+        if player == computer:
+            print("It's a tie!")
+        elif (player == "rock" and computer == "scissors") or \
+             (player == "scissors" and computer == "paper") or \
+             (player == "paper" and computer == "rock"):
+             print("You win this round!")
+             player_score += 1
+        else:
+            print("You Lose this round!")
+            comp_score += 1
+            
+        print(f"Current score - Player: {player_score}, Computer: {comp_score}\n")
 
 # Man Function
 def main():
