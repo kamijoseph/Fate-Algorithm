@@ -29,6 +29,15 @@ def rps_game():
             comp_score += 1
             
         print(f"Current score - Player: {player_score}, Computer: {comp_score}\n")
+        
+    # Winner
+    if player_score > comp_score:
+        print("You Win!")
+    elif player_score < comp_score:
+        print("You Lose!")
+    else:
+        print("It's a Tie!")
+        
 
 # Man Function
 def main():
