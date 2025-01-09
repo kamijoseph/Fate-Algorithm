@@ -36,7 +36,20 @@ def play_again():
 
 # Main Function
 def main():
-    pass
+    print("Welcome, This is the Number Guessing Game.")
+    while True:
+        print('----------------------------------------------------')
+        print("The Game is Simple. I give you a Number beween 1 and 100 and you keep guessing until you get it right.")
+        proceed = input("Would you like to proceed? (yes/no): ").lower()
+        if proceed == "yes":
+            number_guess()
+            break
+        elif proceed == "no":
+            print("Goodbye, See you next time.")
+            break
+        else:
+            print("Invalid input. Try again.")
+        
 
 if __name__ == "__main__":
     main()
