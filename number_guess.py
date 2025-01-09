@@ -24,7 +24,7 @@ def number_guess():
 # lay again Function
 def play_again():
     while True:
-        again = input("Would you like to play again?: ").lower()
+        again = input("Would you like to play again? (Yes/No): ").lower()
         if again == "yes":
             number_guess()
             break
