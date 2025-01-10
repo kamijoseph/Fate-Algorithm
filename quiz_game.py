@@ -49,7 +49,11 @@ def display_score(correct_guesses, guesses):
 
 # Function to Prompt Play Again 
 def play_again():
-    pass
+    rensponse = input("Would you like to play again? (Yes/No): ").lower()
+    if rensponse == "yes":
+        return True
+    return False
+
     
 
 def main():
