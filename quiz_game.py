@@ -1,5 +1,7 @@
 
 # Simple Quiz Game just for logic
+
+# New Game Initialiation
 def new_game():
     
     guesses = []
@@ -17,17 +19,25 @@ def new_game():
         correct_guesses += check_answer(questions.get(key), guess)
         question_num += 1
         
-        display_score(correct_guesses, guesses)
+    display_score(correct_guesses, guesses)
     
-
-def check_answer():
-    pass
+# Checking the Answer
+def check_answer(answer, guess):
+    if answer == guess:
+        print("Correct Answer.")
+        return 1
+    else:
+        print("Incorrect Answer.")
+        return 0
 
 def display_score(correct_guesses, guesses):
-    pass
+    print("-----------------------------")
+    print("RESULTS")
+    print("-----------------------------")
 
 def play_again():
     pass
+    
 
 def main():
     pass
