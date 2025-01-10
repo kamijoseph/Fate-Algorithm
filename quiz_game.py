@@ -32,6 +32,8 @@ def new_game():
         question_num += 1
         
     display_score(correct_guesses, guesses)
+    while play_again():
+        new_game()
     
 # Checking the Answer
 def check_answer(answer, guess):
@@ -64,7 +66,8 @@ def play_again():
     rensponse = input("Would you like to play again? (Yes/No): ").lower()
     if rensponse == "yes":
         return True
-    return False
+    else:
+        return False
 
 def main():
     while True:
@@ -77,7 +80,6 @@ def main():
             break
         else:
             print("Invalid Input! Enter Yes or No")
-    
-    while play_again:
-        new_game()
-    
+        
+if __name__ == "__main__":
+    main()
