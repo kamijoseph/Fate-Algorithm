@@ -1,6 +1,18 @@
 
 # Simple Quiz Game just for logic
 
+questions = {
+            "Who created Python?: ": "A",
+            "What year was Python created?: ": "B",
+            "Python is tributed to which comedy group?: ": "C",
+            "Is the Earth Round?: ": "A"
+        }
+
+options = [["A. Guido Van Rossum", "B. Elon Musk", "C. Bills Gate", "D. Mark Zuckerberg"],
+        ["A. 1989", "B. 1991", "C. 1974", "D. 1980"],
+        ["A. Lonely Island", "B. NL", "C. Monty Pyton", "D. Mark Zuckerberg"],
+        ["A. True", "B. False", "C. Debatable", "D. What is Earth"]]
+
 # New Game Initialiation
 def new_game():
     
@@ -54,7 +66,18 @@ def play_again():
         return True
     return False
 
-    
-
 def main():
-    pass
+    while True:
+        main_cont = input("Welcome, this is the Quiz Game. Do you wish to continue? (Yes/No): ").lower()
+        if main_cont == "yes":
+            new_game()
+            break
+        elif main_cont == "no":
+            print("Thank You for Visiting, See you next time.")
+            break
+        else:
+            print("Invalid Input! Enter Yes or No")
+    
+    while play_again:
+        new_game()
+    
