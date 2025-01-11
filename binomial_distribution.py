@@ -9,7 +9,7 @@ def binomial_distributions():
         try:
             n = int(input("Enter the number of trials (n): "))
             k = int(input("Enter the number of successes (k): "))
-            p = int(input("Enter the probability of success in a single try(p): "))
+            p = float(input("Enter the probability of success in a single try(p): "))
             
             # Probability should be between 0 and 1
             if not (0 <= p <= 1):
@@ -24,7 +24,7 @@ def binomial_distributions():
             print("Please enter a valid numerical value.")
             
         # Calculate again Prompt
-        calculate_again = input("would you like to perfom more calculations? (Yes/No)").strip().lower()
+        calculate_again = input("would you like to perfom more calculations? (Yes/No): ").strip().lower()
         if calculate_again != "yes":
             print("\nExiting the Binomial distribution Calculator. Goodbye!")
             break
