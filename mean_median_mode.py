@@ -1,13 +1,19 @@
 
 # Mean, and Median Median Calculator
 
-def mean():
+# Mean calculation function
+def mean(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total / len(numbers)
+
+# Mode Search function
+def mode(numbers):
     pass
 
-def mode():
-    pass
-
-def median():
+# Median Evaluation function
+def median(numbers):
     pass
 
 def main():
