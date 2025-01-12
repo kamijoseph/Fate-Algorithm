@@ -1,13 +1,10 @@
-# Mean, Mode, and Median Calculator
+# Mean, Median, and Mode Calculator
 
-# Mean calculation function
 def mean(numbers):
-    total = 0
-    for number in numbers:
-        total += number
+    total = sum(numbers)
     return total / len(numbers)
 
-# Mode Search function
+
 def mode(numbers):
     max_count = (0, 0)
     for number in numbers:
@@ -16,46 +13,59 @@ def mode(numbers):
             max_count = (occurrence, number)
     return max_count[1]
 
-# Median Evaluation function
+
 def median(numbers):
     numbers.sort()
-    
-    # Odd Length of numbers
-    if len(numbers) % 2 == 1:
-        return numbers[len(numbers) // 2]
-    
-    # Even Length of Numbers
-    else:
-        num1 = numbers[len(numbers) // 2 - 1]
-        num2 = numbers[len(numbers) // 2]
-        
-        # Using the mean function above
+    length = len(numbers)
+    if length % 2 == 1: 
+        return numbers[length // 2]
+    else: 
+        num1 = numbers[length // 2 - 1]
+        num2 = numbers[length // 2]
         return mean([num1, num2])
 
 def main():
-    print("Welcome, This is the Mean, Median, and Mode Program")
-    numbers = []
+    print("Welcome! This is the Mean, Median, and Mode Calculator.")
+    while True:
+        numbers = []
+        while True:
+            try:
+                users_numbers = input("Enter your numbers separated by commas (e.g., 1,3,4,5,6): ")
+                numbers = list(map(int, users_numbers.split(',')))
+                break
+            except ValueError:
+                print("Invalid input. Please enter only numbers separated by commas.")
+        
+        while True:
+            print("\nOptions for calculations:")
+            print("1. Calculate Mean")
+            print("2. Calculate Mode")
+            print("3. Calculate Median")
+            print("4. Calculate All together")
+            program_choice = input("Enter your choice (1/2/3/4): ").strip()
 
-    users_numbers = input("Enter your numbers separated by commas (e.g., 1,3,4,5,6): ")
-    try:
-        numbers = [int(num) for num in users_numbers.split(',')]
-    except ValueError:
-        print("Invalid input. Please enter a list of integers separated by commas.")
-        return
+            if program_choice == "1":
+                print(f"Mean: {mean(numbers):.2f}")
+            elif program_choice == "2":
+                print(f"Mode: {mode(numbers)}")
+            elif program_choice == "3":
+                print(f"Median: {median(numbers)}")
+            elif program_choice == "4":
+                print(f"Mean: {mean(numbers):.2f}")
+                print(f"Mode: {mode(numbers)}")
+                print(f"Median: {median(numbers)}")
+            else:
+                print("Invalid choice. Please select a valid option (1/2/3/4).")
+                continue
 
-    program_choice = input("For Mean press 1\nFor Mode press 2\nFor Median press 3\nFor all press 4\nEnter choice: ")
-    if program_choice == "1":
-        print(f"Mean: {mean(numbers)}")
-    elif program_choice == "2":
-        print(f"Mode: {mode(numbers)}")
-    elif program_choice == "3":
-        print(f"Median: {median(numbers)}")
-    elif program_choice == "4":
-        print(f"Mean: {mean(numbers)}")
-        print(f"Mode: {mode(numbers)}")
-        print(f"Median: {median(numbers)}")
-    else:
-        print("Invalid choice. Please select 1, 2, 3, or 4.")
+            run_again = input("\nWould you like to calculate again with the same numbers? (yes/no): ").lower()
+            if run_again == "no":
+                break
+
+        new_set = input("\nWould you like to calculate with a new set of numbers? (yes/no): ").lower()
+        if new_set == "no":
+            print("Thank you for using the calculator! Goodbye!")
+            break
 
 if __name__ == "__main__":
     main()
