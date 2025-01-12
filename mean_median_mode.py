@@ -19,7 +19,20 @@ def mode(numbers):
 
 # Median Evaluation function
 def median(numbers):
-    pass
+    numbers.sort()
+    
+    # Odd Length of numbers
+    if len(numbers) % 2 == 1:
+        return numbers[len(numbers) // 2]
+    
+    # Even Length of Numbers
+    elif len(numbers) % 2 == 0:
+        num1 = numbers[len(numbers) // 2 - 1]
+        num2 = numbers[len(numbers) // 2]
+        
+        # Using the mean function above. there is an easer way but this is my code fren
+        meanx = mean(num1,num2)
+        return meanx
 
 def main():
     pass
