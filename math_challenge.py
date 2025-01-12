@@ -1,7 +1,7 @@
 
 # Timed Simple Math Challege
 import random
-import math
+import time
 
 # Constant Variables for the Operations and Expression Generation
 OPERATORS = ["+", "-", "*"]
@@ -19,11 +19,37 @@ def generate_problem():
     answer = eval(expression)
     return expression, answer
 
-def timer_challenge():
-    pass
-
+# Function tha runs the timed Math Challenge.
 def main():
-    pass
+    print("Welcome, this is the Timed Math Challenge!")
+    input("Press Enter to start.")
+    print("------------------------------------------")
+    
+    start_time = time.time()
+    wrong_attempts = 0
+    
+    for problem_number in range(1, TOTAL_PROBLEMS + 1):
+        expr, correct_answer = generate_problem()
+        
+        while True:
+            try:
+                user_guess = input(f"Problem #{problem_number}: {expr} = ")
+                if user_guess == correct_answer:
+                    break
+                else:
+                    print("Incorrect answer.Try again")
+                    wrong_attempts += 1
+            except ValueError:
+                print("Invalid Input! Pleae Enter A valid nmerical value.")
+    
+    end_time = time.time()
+    total_time = round(end_time - start_time, 2)
+    print("------------------------------------------")
+    print(f"Great job! You completed {TOTAL_PROBLEMS} problems in {total_time} seconds.")
+    if wrong_attempts > 1:
+        print(f"You had {wrong_attempts} incorrect attempts.")
+    else:
+        print(f"You had only {wrong_attempts} incorect attempt.")
 
 if __name__ == "__main__":
     main()
