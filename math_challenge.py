@@ -14,6 +14,10 @@ def generate_problem():
     left = random.randint(MIN_OPERAND, MAX_OPERAND)
     right = random.randint(MIN_OPERAND, MAX_OPERAND)
     operator = random.choice(OPERATORS)
+    
+    expression = f"{left} {operator} {right}"
+    answer = eval(expression)
+    return expression, answer
 
 def timer_challenge():
     pass
