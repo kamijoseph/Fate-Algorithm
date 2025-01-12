@@ -1,3 +1,10 @@
+## HOW TO RUN
+
+## REMARKS --> PLEASE READ FREN
+1. On the math_challenge.py module you can change the MAX_OPERAND value to increase the difficulty of the Program,
+and the TOTAL_PROBLEMS value to add more questions. If you are a contributor reading this you cn add that functionality,
+i am leaving that to you.
+
 If you have surfed through My GitHub you may have come across my Fate Program Repository. This is the same but I am rebuilding every part of it, improving restructuring. 
 I know you may be asking yourself why not update this newer version to the old into this new program and the answers are:
 
