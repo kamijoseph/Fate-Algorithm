@@ -10,7 +10,12 @@ def mean(numbers):
 
 # Mode Search function
 def mode(numbers):
-    pass
+    max_count = (0, 0)
+    for number in numbers:
+        occurence = numbers.count(number)
+        if occurence > max_count[0]:
+            max_count = (occurence, number)
+    return max_count[1]
 
 # Median Evaluation function
 def median(numbers):
