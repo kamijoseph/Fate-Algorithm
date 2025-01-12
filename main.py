@@ -6,7 +6,7 @@ import compound_interest
 import countdown
 import fibbonacci
 import math_challenge
-import mean_median
+import mean_median_mode
 import measurement_calc
 import number_guess
 import password_gen
@@ -30,7 +30,7 @@ print(compound_interest.main())
 print(countdown.main())
 print(fibbonacci.main())
 print(math_challenge.main())
-print(mean_median.main())
+print(mean_median_mode.main())
 print(measurement_calc.main())
 print(number_guess.main())
 print(password_gen.main())
