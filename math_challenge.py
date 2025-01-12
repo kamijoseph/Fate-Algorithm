@@ -6,7 +6,7 @@ import time
 # Constant Variables for the Operations and Expression Generation
 OPERATORS = ["+", "-", "*"]
 MIN_OPERAND = 1
-MAX_OPERAND = 100
+MAX_OPERAND = 10
 TOTAL_PROBLEMS = 10
 
 # Function to Generate the Problems
@@ -22,8 +22,8 @@ def generate_problem():
 # Function tha runs the timed Math Challenge.
 def main():
     print("Welcome, this is the Timed Math Challenge!")
-    input("Press Enter to start.")
-    print("------------------------------------------")
+    input("Press Enter to start.................. ")
+    print("------------------------------------------\n")
     
     start_time = time.time()
     wrong_attempts = 0
@@ -33,7 +33,7 @@ def main():
         
         while True:
             try:
-                user_guess = input(f"Problem #{problem_number}: {expr} = ")
+                user_guess = int(input(f"Problem #{problem_number}: {expr} = "))
                 if user_guess == correct_answer:
                     break
                 else:
@@ -50,6 +50,7 @@ def main():
         print(f"You had {wrong_attempts} incorrect attempts.")
     else:
         print(f"You had only {wrong_attempts} incorect attempt.")
+        
 
 if __name__ == "__main__":
     main()
