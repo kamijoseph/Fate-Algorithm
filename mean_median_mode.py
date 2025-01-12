@@ -35,7 +35,27 @@ def median(numbers):
         return meanx
 
 def main():
-    pass
+    print("Welcome, This is the Mean, Median and Mode Programme")
+    numbers = []
+    
+    try:
+        users_numbers = int(input("Enter your numbers (1,3,4,5,6,etc): "))
+        numbers.append(users_numbers)
+        # return numbers
+    except ValueError:
+        print("Invalid input! Enter valid numerical values")
+        
+    program_choice = input("For Mean press 1\nFor Mode press 2\nFor Median press 3\nFor all press 4\nEnter choice: ")
+    if program_choice == "1":
+        mean(numbers)
+    elif program_choice == "2":
+        mode(numbers)
+    elif program_choice == "3":
+        median(numbers)
+    elif program_choice == "4":
+        mean(numbers)
+        mode(numbers)
+        median(numbers)
 
 if __name__ == "__main__":
     main()
