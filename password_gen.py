@@ -26,7 +26,13 @@ def passwd_gen(length):
     return ''.join(password)
 
 def main():
-    pass
+    print("Welcome, this is the random password generator")
+    try:
+        length = int(input("Enter the desired length of the password. Must be above 4 characters."))
+        password = passwd_gen(length)
+        print(f"Your generated is: \n{password}")
+    except ValueError as e:
+        print(f"Error {e}")
 
 if __name__ == "__main__":
     main()
