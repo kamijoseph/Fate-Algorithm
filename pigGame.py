@@ -15,7 +15,16 @@ def getPlayers():
             print("Invalid entry! Try again")
 
 def main():
-    pass
-
+    players = getPlayers()
+    maxScore = 50
+    playerScore = [0 for _ in range(players)]
+    
+    # ZeGame looooooooop
+    while max(playerScore) < maxScore:
+        for player in range(players):
+            print(f"\nPlayer {player + 1}, its tour turn.")
+            currentScore = 0
+            
+            
 if __name__ == "__main__":
     main()
