@@ -15,7 +15,7 @@ def passwd_gen(length):
     
     password = [
         random.choice(uppercase),
-        random.choice(lowercase),
+        random.choice(lowercase), 
         random.choice(digits),
         random.choice(special_char)
     ]
