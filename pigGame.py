@@ -42,5 +42,12 @@ def main():
                 else:
                     print("Invalid input. Enter Yes to roll or No to hold.")
             
+            playerScore[player] += value
+            print(f"Player {player + 1}'s total score: {playerScore[player]}")
+            
+            if playerScore[player] >= maxScore:
+                print(f"\nPlayer {player + 1} wins with a score of {playerScore[player]}!")
+                return
+            
 if __name__ == "__main__":
     main()
