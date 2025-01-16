@@ -13,7 +13,6 @@ import password_gen
 import pigGame
 import quiz_game
 import rock_paper_scissors
-import slot_machine
 import stocksPrice
 import turtle_race
 import YouTube                                                                                             
@@ -37,7 +36,6 @@ print(password_gen.main())
 print(pigGame.main())
 print(quiz_game.main())
 print(rock_paper_scissors.main())
-print(slot_machine.main())
 print(stocksPrice.main())
 print(turtle_race.main())
 print(YouTube.main())
