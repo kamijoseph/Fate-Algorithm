@@ -37,7 +37,7 @@ def main():
                     else:
                         currentScore += value
                         print(f"Your current score this turn is: {currentScore}")
-                elif roll == "No":
+                elif roll == "no":
                     break
                 else:
                     print("Invalid input. Enter Yes to roll or No to hold.")

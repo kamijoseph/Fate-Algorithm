@@ -28,9 +28,9 @@ def passwd_gen(length):
 def main():
     print("Welcome, this is the random password generator")
     try:
-        length = int(input("Enter the desired length of the password. Must be above 4 characters."))
+        length = int(input("Enter the desired length of the password. Must be above 4 characters and above: "))
         password = passwd_gen(length)
-        print(f"Your generated is: \n{password}")
+        print(f"Your generated is: \n\n{password}\n")
     except ValueError as e:
         print(f"Error {e}")
 
