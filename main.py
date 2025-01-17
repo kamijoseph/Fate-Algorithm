@@ -25,33 +25,26 @@ def mathComputations():
     print("     4. Fibonacci Numbers Generator")
     print("     5. Mean, Median and Mode Module")
     print("     6. Measurement Conversions Calculator")
-    # Aritmetic calculator
-    # Binomial distribution
-    # Compound Interest
-    # Fib Generator
-    # Mean median and Mode
-    # Measurement Calculator
-    pass
 
+# Games Function
 def games():
-    # Modules
-    # Math Challenge
-    # Number guessing game
-    # pig game
-    # quiz game
-    # rock papers scissors game
-    pass
+    print("Perfect! Here are the Games Modules:")
+    print("     1. Timed Math Challenge Game")
+    print("     2. Number Guessing Game")
+    print("     3. P-I-G Game")
+    print("     4. Simple Quiz Game")
+    print("     5. Rock Paper Scissors Game")
+    print("     6. Measurement Conversions Calculator")
 
+# Scripts Function
 def scripts():
-    # Modules
-    # stocks price
-    # Youtube downloader
-    # countodown
-    # password generators
-    pass
+    print("Excellent! Here are some cool Scripts:")
+    print("     1. Stocks Price Fetcher")
+    print("     2. YouTube Videos Downloader")
+    print("     3. CountDown Script")
+    print("     4. Passwords Generators")
 
-
-
+# Main Function to ..... Ugh you can see what it does, right?
 def main():
     print("Welcome to the Fate Algorithm System\nMy name is Fate, and I will help you with different tasks and terminal gameplays\n")
     name = input("What is your name? ")
