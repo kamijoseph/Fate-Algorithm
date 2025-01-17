@@ -28,7 +28,7 @@ def mathComputations():
         print("     6. Measurement Conversions Calculator")
         
         while True:
-            mathChoice = input("Enter yout choice of computation (1/2/3/4/5/6): ")
+            mathChoice = input("Enter your choice of Math computation (1/2/3/4/5/6): ")
             if mathChoice == "1":
                 Ac.main()
                 break
@@ -62,7 +62,18 @@ def games():
     print("     3. P-I-G Game")
     print("     4. Simple Quiz Game")
     print("     5. Rock Paper Scissors Game")
-    print("     6. Measurement Conversions Calculator")
+    
+    gameChoice = ("Enter your choice of Math computation (1/2/3/4/5/6): ")
+    if gameChoice == "1":
+        MathC.main()
+    if gameChoice == "2":
+        Ng.main()
+    if gameChoice == "3":
+        Pge.main()
+    if gameChoice == "4":
+        Qg.main()
+    if gameChoice == "5":
+        Rps.main()
 
 # Scripts Function
 def scripts():
