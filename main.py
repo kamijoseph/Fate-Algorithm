@@ -14,7 +14,6 @@ import pigGame
 import quiz_game
 import rock_paper_scissors
 import stocksPrice
-import turtle_race
 import YouTube                                                                                             
 
 # Welcome Message
@@ -37,5 +36,4 @@ print(pigGame.main())
 print(quiz_game.main())
 print(rock_paper_scissors.main())
 print(stocksPrice.main())
-print(turtle_race.main())
 print(YouTube.main())
