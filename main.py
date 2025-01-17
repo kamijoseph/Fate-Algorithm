@@ -16,33 +16,52 @@ import rock_paper_scissors as Rps
 import stocksPrice as SnP
 import YouTube as DD                                                                                  
 
-# Welcome Message
-print("Welcome to the Fate Algorithm System\nMy name is Fate, and I will help you with different tasks and terminal gameplays\n")
-name = input("What is your name? ")
-print(f"Nice to meet you {name}!\n")
-
 # Main Menu
-print(Ac.main())
-print(Bd.main())
-print(Cd.main())
-print(Cdn.main())
-print(Fib.main())
-print(MathC.main())
-print(MMM.main())
-print(Mc.main())
-print(Ng.main())
-print(Pg.main())
-print(Pge.main())
-print(Qg.main())
-print(Rps.main())
-print(SnP.main())
-print(DD.main())
-
-def games():
-    pass
-
-def scripts():
-    pass
+# print(Ac.main())
+# print(Bd.main())
+# print(Cd.main())
+# print(Cdn.main())
+# print(Fib.main())
+# print(MathC.main())
+# print(MMM.main())
+# print(Mc.main())
+# print(Ng.main())
+# print(Pg.main())
+# print(Pge.main())
+# print(Qg.main())
+# print(Rps.main())
+# print(SnP.main())
+# print(DD.main())
 
 def mathComputations():
-    pass
+    print("Math Modules")
+
+def games():
+    print("Games Modules")
+
+def scripts():
+    print("Scripts Modules")
+
+
+def main():
+    print("Welcome to the Fate Algorithm System\nMy name is Fate, and I will help you with different tasks and terminal gameplays\n")
+    name = input("What is your name? ")
+    print(f"Nice to meet you {name}!\n")
+    print("I have Calculations modules, Terminal games modules, and random Scripts modules")
+    
+    while True:
+        userInput = input("What would you like today? \nFor Math Computations type 1\nFor Games type 2\nFor scripts type 3\nType 4 to exit: ")
+        if userInput == "1":
+            return mathComputations()
+        elif userInput == "2":
+            return games()
+        elif userInput == "3":
+            return scripts()
+        elif userInput == "4":
+            print(f"Thank You for visiting {name}. See you again soon fren.")
+            break
+        else:
+            print("Invalid entry! Try again.")
+
+if __name__ == "__main__":
+    main()
