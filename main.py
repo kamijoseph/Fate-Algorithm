@@ -18,30 +18,41 @@ import YouTube as DD
 
 # Mathematical Computations function
 def mathComputations():
-    print("Good choice. Here are the mathematics computation modules:")
-    print("     1. Arithmetic Calculator")
-    print("     2. Binomal distribution Calculator")
-    print("     3. Compound Interest Calculator")
-    print("     4. Fibonacci Numbers Generator")
-    print("     5. Mean, Median and Mode Module")
-    print("     6. Measurement Conversions Calculator")
-    
-    mathChoice = input("    Enter yout choice of computation (1/2/3/4/5/6): ")
-    if mathChoice == "1":
-        Ac.main()
-    elif mathChoice == "2":
-        Bd.main()
-    elif mathChoice == "3":
-        Ci.main()
-    elif mathChoice == "4":
-        Fib.main
-    elif mathChoice == "5":
-        MMM.main()
-    elif mathChoice == "6":
-        Mc.main()
-    else:
-        print("Invalid choice. Choices available (1/2/3/4/5/6).")
-        return
+    while True:
+        print("Good choice. Here are the mathematics computation modules:")
+        print("     1. Arithmetic Calculator")
+        print("     2. Binomal distribution Calculator")
+        print("     3. Compound Interest Calculator")
+        print("     4. Fibonacci Numbers Generator")
+        print("     5. Mean, Median and Mode Module")
+        print("     6. Measurement Conversions Calculator")
+        
+        while True:
+            mathChoice = input("Enter yout choice of computation (1/2/3/4/5/6): ")
+            if mathChoice == "1":
+                Ac.main()
+                break
+            elif mathChoice == "2":
+                Bd.main()
+                break
+            elif mathChoice == "3":
+                Ci.main()
+                break
+            elif mathChoice == "4":
+                Fib.main
+                break
+            elif mathChoice == "5":
+                MMM.main()
+                break
+            elif mathChoice == "6":
+                Mc.main()
+                break
+            else:
+                print("Invalid choice. Choices available (1/2/3/4/5/6).\n")
+        computeAgain = input("\nWould you like to continue with calculations? (Yes?No): ").strip().lower()
+        if computeAgain != "yes":
+            print("See you next time, Bye!")
+            break
 
 # Games Function
 def games():
