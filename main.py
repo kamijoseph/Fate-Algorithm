@@ -2,8 +2,8 @@
 # The Modules are:
 import Arithmetic_calc as Ac
 import binomial_distribution as Bd
-import compound_interest as Cd
-import countdown as Cdn
+import compound_interest as Ci
+import countdown as Cd
 import fibbonacci as Fib
 import math_challenge as MathC
 import mean_median_mode as MMM
@@ -25,6 +25,23 @@ def mathComputations():
     print("     4. Fibonacci Numbers Generator")
     print("     5. Mean, Median and Mode Module")
     print("     6. Measurement Conversions Calculator")
+    
+    mathChoice = input("    Enter yout choice of computation (1/2/3/4/5/6): ")
+    if mathChoice == "1":
+        Ac.main()
+    elif mathChoice == "2":
+        Bd.main()
+    elif mathChoice == "3":
+        Ci.main()
+    elif mathChoice == "4":
+        Fib.main
+    elif mathChoice == "5":
+        MMM.main()
+    elif mathChoice == "6":
+        Mc.main()
+    else:
+        print("Invalid choice. Choices available (1/2/3/4/5/6).")
+        return
 
 # Games Function
 def games():
