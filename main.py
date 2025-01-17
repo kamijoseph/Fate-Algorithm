@@ -16,39 +16,47 @@ import rock_paper_scissors as Rps
 import stocksPrice as SnP
 import YouTube as DD                                                                                  
 
-# Main Menu
-# print(Ac.main())
-# print(Bd.main())
-# print(Cd.main())
-# print(Cdn.main())
-# print(Fib.main())
-# print(MathC.main())
-# print(MMM.main())
-# print(Mc.main())
-# print(Ng.main())
-# print(Pg.main())
-# print(Pge.main())
-# print(Qg.main())
-# print(Rps.main())
-# print(SnP.main())
-# print(DD.main())
-
+# Mathematical Computations function
 def mathComputations():
-    print("Math Modules")
+    print("Good choice. Here are the mathematics computation modules:")
+    print("     1. Arithmetic Calculator")
+    print("     2. Binomal distribution Calculator")
+    print("     3. Compound Interest Calculator")
+    print("     4. Fibonacci Numbers Generator")
+    print("     5. Mean, Median and Mode Module")
+    print("     6. Measurement Conversions Calculator")
+    # Aritmetic calculator
+    # Binomial distribution
+    # Compound Interest
+    # Fib Generator
+    # Mean median and Mode
+    # Measurement Calculator
+    pass
 
 def games():
-    print("Games Modules")
+    # Modules
+    # Math Challenge
+    # Number guessing game
+    # pig game
+    # quiz game
+    # rock papers scissors game
+    pass
 
 def scripts():
-    print("Scripts Modules")
+    # Modules
+    # stocks price
+    # Youtube downloader
+    # countodown
+    # password generators
+    pass
+
 
 
 def main():
     print("Welcome to the Fate Algorithm System\nMy name is Fate, and I will help you with different tasks and terminal gameplays\n")
     name = input("What is your name? ")
     print(f"Nice to meet you {name}!\n")
-    print("I have Calculations modules, Terminal games modules, and random Scripts modules")
-    
+    print("I have a collection Calculations modules, Terminal games modules, and random Scripts modules")
     while True:
         userInput = input("What would you like today? \nFor Math Computations type 1\nFor Games type 2\nFor scripts type 3\nType 4 to exit: ")
         if userInput == "1":
