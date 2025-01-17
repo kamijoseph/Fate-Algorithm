@@ -29,7 +29,7 @@ def play_again():
             number_guess()
             break
         elif again == "no":
-            print("Thank You for playing. Goodbye.")
+            print("Thank You for playing the Number guessing Game.")
             break
         else:
             print("Invalid entry! Enter (Yes or No).")

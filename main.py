@@ -56,24 +56,37 @@ def mathComputations():
 
 # Games Function
 def games():
-    print("Perfect! Here are the Games Modules:")
-    print("     1. Timed Math Challenge Game")
-    print("     2. Number Guessing Game")
-    print("     3. P-I-G Game")
-    print("     4. Simple Quiz Game")
-    print("     5. Rock Paper Scissors Game")
-    
-    gameChoice = ("Enter your choice of Math computation (1/2/3/4/5/6): ")
-    if gameChoice == "1":
-        MathC.main()
-    if gameChoice == "2":
-        Ng.main()
-    if gameChoice == "3":
-        Pge.main()
-    if gameChoice == "4":
-        Qg.main()
-    if gameChoice == "5":
-        Rps.main()
+    while True:
+        print("Perfect! Here are the Games Modules:")
+        print("     1. Timed Math Challenge Game")
+        print("     2. Number Guessing Game")
+        print("     3. P-I-G Game")
+        print("     4. Simple Quiz Game")
+        print("     5. Rock Paper Scissors Game")
+        
+        while True:
+            gameChoice = input("Enter the game module of your choice(1/2/3/4/5): ")
+            if gameChoice == "1":
+                MathC.main()
+                break
+            elif gameChoice == "2":
+                Ng.main()
+                break
+            elif gameChoice == "3":
+                Pge.main()
+                break
+            elif gameChoice == "4":
+                Qg.main()
+                break
+            elif gameChoice == "5":
+                Rps.main()
+                break
+            else:
+                print("Invalid choice. Choices available (1/2/3/4/5).\n")
+        replay = input("Would you lke to play more games or that one again? (Yes/No): ").strip().lower()
+        if replay != "yes":
+            print("Thank you for playing.\nHope you enjoyed.\nSee you later, Bye!")
+            break
 
 # Scripts Function
 def scripts():
