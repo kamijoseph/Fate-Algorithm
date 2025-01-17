@@ -1,20 +1,20 @@
 # Main to run the several modules of the project
 # The Modules are:
-import Arithmetic_calc
-import binomial_distribution
-import compound_interest
-import countdown
-import fibbonacci
-import math_challenge
-import mean_median_mode
-import measurement_calc
-import number_guess
-import password_gen
-import pigGame
-import quiz_game
-import rock_paper_scissors
-import stocksPrice
-import YouTube                                                                                             
+import Arithmetic_calc as Ac
+import binomial_distribution as Bd
+import compound_interest as Cd
+import countdown as Cdn
+import fibbonacci as Fib
+import math_challenge as MathC
+import mean_median_mode as MMM
+import measurement_calc as Mc
+import number_guess as Ng
+import password_gen as Pg
+import pigGame as Pge
+import quiz_game as Qg
+import rock_paper_scissors as Rps
+import stocksPrice as SnP
+import YouTube as DD                                                                                  
 
 # Welcome Message
 print("Welcome to the Fate Algorithm System\nMy name is Fate, and I will help you with different tasks and terminal gameplays\n")
@@ -22,18 +22,27 @@ name = input("What is your name? ")
 print(f"Nice to meet you {name}!\n")
 
 # Main Menu
-print(Arithmetic_calc.main())
-print(binomial_distribution.main())
-print(compound_interest.main())
-print(countdown.main())
-print(fibbonacci.main())
-print(math_challenge.main())
-print(mean_median_mode.main())
-print(measurement_calc.main())
-print(number_guess.main())
-print(password_gen.main())
-print(pigGame.main())
-print(quiz_game.main())
-print(rock_paper_scissors.main())
-print(stocksPrice.main())
-print(YouTube.main())
+print(Ac.main())
+print(Bd.main())
+print(Cd.main())
+print(Cdn.main())
+print(Fib.main())
+print(MathC.main())
+print(MMM.main())
+print(Mc.main())
+print(Ng.main())
+print(Pg.main())
+print(Pge.main())
+print(Qg.main())
+print(Rps.main())
+print(SnP.main())
+print(DD.main())
+
+def games():
+    pass
+
+def scripts():
+    pass
+
+def mathComputations():
+    pass
