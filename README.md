@@ -11,7 +11,7 @@ Although, they are called in the main.py each single file is ready to be used an
 Contributors please read the part below. ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
 
 
-## REMARKS --> PLEASE READ FREN
+### PLEASE READ FREN
 1. On the math_challenge.py module you can change the MAX_OPERAND value to increase the difficulty of the Program,
 and the TOTAL_PROBLEMS value to add more questions. If you are a contributor reading this you can add that functionality
 where the program prompts a user input for those values, that is if you are the earliest person to discover this part.
