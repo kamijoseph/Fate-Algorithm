@@ -101,13 +101,17 @@ def scripts():
         while True:
             scriptChoice = input("Enter the game module of your choice(1/2/3/4): ")
             if scriptChoice == "1":
-                pass
+                SnP.main()
+                break
             elif scriptChoice == "2":
-                pass
+                DD.main()
+                break
             elif scriptChoice == "3":
-                pass
+                Cd.main()
+                break
             elif scriptChoice == "4":
-                pass
+                Pg.main()
+                break
         reRun = input("Would you lke to play more Scripts or that one again? (Yes/No): ").strip().lower()
         if reRun != "yes":
             print("Thank you for using my scripts. I do hope they were helpful.")
