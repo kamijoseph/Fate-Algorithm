@@ -1,4 +1,4 @@
-### HOW TO RUN
+# HOW TO RUN
 ## Main.py File
 Run Main.py File to run the Program. 
 The file imports all other files in the code as modules and respectively calls their main function where needed.
