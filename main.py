@@ -112,9 +112,10 @@ def scripts():
             elif scriptChoice == "4":
                 Pg.main()
                 break
-        reRun = input("Would you lke to play more Scripts or that one again? (Yes/No): ").strip().lower()
+        reRun = input("Would you lke to run more Scripts or that one again? (Yes/No): ").strip().lower()
         if reRun != "yes":
             print("Thank you for using my scripts. I do hope they were helpful.")
+            break
 
 # Main Function to ..... Ugh you can see what it does, right?
 def main():
@@ -138,3 +139,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+# More Modules will be added as i level up in python programming . Therefore stay tuned and see you later alligators
