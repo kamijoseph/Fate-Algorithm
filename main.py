@@ -91,11 +91,26 @@ def games():
 
 # Scripts Function
 def scripts():
-    print("Excellent! Here are some cool Scripts:")
-    print("     1. Stocks Price Fetcher")
-    print("     2. YouTube Videos Downloader")
-    print("     3. CountDown Script")
-    print("     4. Passwords Generators")
+    while True:
+        print("Excellent! Here are some cool Scripts:")
+        print("     1. Stocks Price Fetcher")
+        print("     2. YouTube Videos Downloader")
+        print("     3. CountDown Script")
+        print("     4. Passwords Generators")
+        
+        while True:
+            scriptChoice = input("Enter the game module of your choice(1/2/3/4): ")
+            if scriptChoice == "1":
+                pass
+            elif scriptChoice == "2":
+                pass
+            elif scriptChoice == "3":
+                pass
+            elif scriptChoice == "4":
+                pass
+        reRun = input("Would you lke to play more Scripts or that one again? (Yes/No): ").strip().lower()
+        if reRun != "yes":
+            print("Thank you for using my scripts. I do hope they were helpful.")
 
 # Main Function to ..... Ugh you can see what it does, right?
 def main():
