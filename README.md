@@ -36,4 +36,6 @@ I know you may be asking yourself why not update this newer version to the old i
   
   --> And finally, because these are my repositories, I do what I want with them.
 
+Anyways, the next Fate Algorithm will be a super-intelligent large language model Artificial Intelligence which will also be open Source and tat will be the true FATE. The final Fate Algorithm.
+
 
