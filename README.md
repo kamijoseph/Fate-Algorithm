@@ -4,9 +4,13 @@
 Run Main.py File to run the Program. 
 The file imports all other files in the code as modules and respectively calls their main function where needed.
 
+## What does it actually do?
+The Program is a compilation of several files that serve a defined purpose, all of which are put onto one program.
+You can access individual files and run them separately if you desire to do that.
+
 ## The Modules.
 All other files are imported as modules and their main function called to run the respective tasks meant..........
-Although, they are called in the main.py each single file is ready to be used and run, so just open your file of choice and run the code, but thats a degenerative way to run it. 😂
+Although, they are called in the main.py each single file is ready to be used and run, so open your file of choice and run the code, but that's a degenerative way to run it. 😂
 
 ## Contributors
 Contributors please read the part below. ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
