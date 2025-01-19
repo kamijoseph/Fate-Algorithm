@@ -15,7 +15,7 @@ I will always be updating this project, ever until i run out of python scripts t
 All other files are imported as modules and their main function called to run the respective tasks meant..........
 Although, they are called in the main.py each single file is ready to be used and run, so open your file of choice and run the code, but that's a degenerative way to run it. 😂
 
-## Contributors
+# CONTRIBUTIONS.
 Contributors, please read the part below. ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
 
 
