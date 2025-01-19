@@ -34,10 +34,10 @@ I know you may be asking yourself why not update this newer version to the old i
 
   --> The older version reminds me of the best times, the old times I wrote a comprehensive project.
   
-  --> This is a comparison of how far I have come and grown as a Python developer.
+  --> This compares how far I have come and grown as a Python developer.
   
   --> And finally, because these are my repositories, I do what I want with them.
 
-Anyways, the next Fate Algorithm will be a super-intelligent large language model Artificial Intelligence which will also be open Source and tat will be the true FATE. The final Fate Algorithm.
+Anyways, the next Fate Algorithm will be a super-intelligent large language model Artificial Intelligence which will also be open Source and that will be the true FATE. The final Fate Algorithm.
 
 
