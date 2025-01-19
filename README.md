@@ -9,21 +9,21 @@ The Program is a compilation of several files that serve a defined purpose, all 
 You can access individual files and run them separately if you desire to do that.
 The project is modular meaning it is designed in a way that it can take as many modules as possible, which are just Python scripts to perform different tasks.
 Modules are imported into the main and the code is modified just slightly to accommodate the new script models, therefore this project will always be incomplete and you can change that by contributing to the project.
-I will always be updating this project, ever until i run out of python scripts that can be written under this sun.
+I will always be updating this project, ever until i run out of Python scripts that can be written under this sun.
 
 ## The Modules.
 All other files are imported as modules and their main function called to run the respective tasks meant..........
 Although, they are called in the main.py each single file is ready to be used and run, so open your file of choice and run the code, but that's a degenerative way to run it. 😂
 
 # CONTRIBUTIONS.
-Contributors, please read the part below. ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
-
-
-### PLEASE READ FREN
+## PLEASE READ FREN ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
 1. On the math_challenge.py module you can change the MAX_OPERAND value to increase the difficulty of the Program,
 and the TOTAL_PROBLEMS value to add more questions. If you are a contributor reading this you can add that functionality
 where the program prompts a user input for those values, that is if you are the earliest person to discover this part.
 i am leaving that to you. Ps: i will not be updating this part of the readme if someone adds the functionality but i will accept their code input and update that.
+
+2. To contribute to this project follow the following steps:
+   a. Present your code in one file, with a straightforward name and two letters of choice that your module will be imported into main. For example, if your file is called Screener choose letters like Sc but also make sure to check the main for the letters of your choice may already be used. You can use three letters but that's like the maximum for now.
 
 If you have surfed through My GitHub you may have come across my Fate Program Repository. This is the same but I am rebuilding every part of it, improving restructuring. 
 I know you may be asking yourself why not update this newer version to the old into this new program and the answers are:
