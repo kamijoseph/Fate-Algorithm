@@ -1,19 +1,22 @@
 # THE FATE ALGORITHM
 
 ## How to Run :: Main.py File
-Run Main.py File to run the Program. 
+Run the Main.py File to run the Program. 
 The file imports all other files in the code as modules and respectively calls their main function where needed.
 
 ## What does it actually do?
-The Program is a compilation of several files that serve a defined purpose, all of which are put onto one program.
+The Program is a compilation of several files that serve a defined purpose, all of which are put into one program.
 You can access individual files and run them separately if you desire to do that.
+The project is modular meaning it is designed in a way that it can take as many modules as possible, which are just Python scripts to perform different tasks.
+Modules are imported into the main and the code is modified just slightly to accommodate the new script models, therefore this project will always be incomplete and you can change that by contributing to the project.
+I will always be updating this project, ever until i run out of python scripts that can be written under this sun.
 
 ## The Modules.
 All other files are imported as modules and their main function called to run the respective tasks meant..........
 Although, they are called in the main.py each single file is ready to be used and run, so open your file of choice and run the code, but that's a degenerative way to run it. 😂
 
 ## Contributors
-Contributors please read the part below. ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
+Contributors, please read the part below. ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
 
 
 ### PLEASE READ FREN
