@@ -1,4 +1,7 @@
 
+# harmonize your file and write a documentation.
+
+
 # Main to run the several modules of the project
 # The Modules are:
 import Arithmetic_calc as Ac
