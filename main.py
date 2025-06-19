@@ -43,7 +43,7 @@ def mathComputations():
                 Ci.main()
                 break
             elif mathChoice == "4":
-                Fib.main
+                Fib.main()
                 break
             elif mathChoice == "5":
                 MMM.main()
