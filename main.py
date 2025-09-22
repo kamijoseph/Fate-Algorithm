@@ -1,9 +1,5 @@
 
-# harmonize your file and write a documentation.
-
-
-# Main to run the several modules of the project
-# The Modules are:
+# modules
 import Arithmetic_calc as Ac
 import binomial_distribution as Bd
 import compound_interest as Ci
