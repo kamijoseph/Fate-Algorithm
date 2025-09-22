@@ -3,16 +3,14 @@
 import yfinance as yf
 import pandas as pd
 
-def get_stock_price(stock_symbol, start_date, end_date):
-    # Fetches the stock price with a ticker symbol and time frame using yfinance
-    # Returns:pd.DataFrame: A dataframe containing the stock prices in the specified time frame
+def get_stock_price(ticker, start, end):
     
     try:
-        stock_data = yf.download(stock_symbol, start=start_date, end=end_date)
+        stock_data = yf.download(ticker, start=start, end=end)
         if stock_data.empty:
-            print(f"No data found for {stock_symbol} in the given time frame.")
+            print(f"No data found for {ticker} in the given time frame.")
             return None
-        print(f"Stock prices for {stock_symbol} from {start_date} to {end_date} ")
+        print(f"Stock prices for {ticker} from {start} to {end} ")
         print(stock_data)
         return stock_data
     except Exception as e:
@@ -21,15 +19,15 @@ def get_stock_price(stock_symbol, start_date, end_date):
     
 def main():
     print("Welcome this is the Yahoo Finance Stock Price Checker!")
-    stock_symbol = input("Enter the stock ticker symbol (e.g., AAPL for Apple): ").upper()
-    start_date = input("Enter the start date (YYYY-MM-DD): ")
-    end_date = input("Enter the end date (YYYY-MM-DD): ")
+    ticker = input("Enter the stock ticker symbol (e.g., AAPL for Apple): ").upper()
+    start = input("Enter the start date (YYYY-MM-DD): ")
+    end = input("Enter the end date (YYYY-MM-DD): ")
     
-    stock_data = get_stock_price(stock_symbol, start_date, end_date)
+    stock_data = get_stock_price(ticker, start, end)
     if stock_data is not None:
         save_option = input("Would you like to save the data to a CSV file? (yes/no): ").lower()
         if save_option == "yes":
-            filename = f"{stock_symbol}_prices_{start_date}_to_{end_date}.csv"
+            filename = f"{ticker}_prices_{start}_to_{end}.csv"
             stock_data.to_csv(filename)
             print(f"Data saved to {filename}")
             
