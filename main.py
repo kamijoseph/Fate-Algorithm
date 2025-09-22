@@ -14,7 +14,7 @@ import pigGame as Pge
 import quiz_game as Qg
 import rock_paper_scissors as Rps
 import stocksPrice as SnP
-import YouTube as DD                                                                                  
+
 
 # Mathematical Computations function
 def mathComputations():
@@ -98,17 +98,14 @@ def scripts():
         print("     4. Passwords Generators")
         
         while True:
-            scriptChoice = input("Enter the game module of your choice(1/2/3/4): ")
+            scriptChoice = input("Enter the game module of your choice(1/2/3): ")
             if scriptChoice == "1":
                 SnP.main()
                 break
             elif scriptChoice == "2":
-                DD.main()
-                break
-            elif scriptChoice == "3":
                 Cd.main()
                 break
-            elif scriptChoice == "4":
+            elif scriptChoice == "3":
                 Pg.main()
                 break
         reRun = input("Would you lke to run more Scripts or that one again? (Yes/No): ").strip().lower()
